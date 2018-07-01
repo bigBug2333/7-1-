@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-首页</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" href="lib/mui/css/mui.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- 标题 -->
+            <div class="title fl">
+                <span>白菜价-内部折扣券</span>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+            <div class="nav">
+                <!-- <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll"> -->
+                <ul class="clearfix">
+                    <!-- 白菜价标题 -->
+                </ul>
+                <!-- </div>
+                </div> -->
+            </div>
+            <div class="space"></div>
+            <div class="product clearfix">
+                <ul>
+                    <li>
+                        <!-- 挖个商品坑 -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 尾部区域 -->
+        <div class="mmm_footer">
+            <div class="navbar clearfix">
+                <div class="login">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+                <div class="back">
+                    <!-- <img src="images/top.jpg" alt=""> -->
+                    <span>返回顶部</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p class="foot_b">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 白菜价标题 -->
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <li data-titleId="{{v.titleId}}">
+            <a href="javascript:;">{{v.title}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 商品详情坑 -->
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <div class="left fl">
+            {{#v.productImg}}
+        </div>
+        <div class="right fr">
+            <h4>{{#v.productName}}</h4>
+            <p class="p1">
+                <span>券后 </span>
+                <span></span>
+                <span>{{#v.productPrice}}</span>
+                <span>206</span>
+            </p>
+            <div class="p2 clearfix">
+                <ul class="fl">
+                    <li>75%</li>
+                </ul>
+                <span class="fl">已领{{#v.productCouponRemain}}张</span>
+            </div>
+            <div class="p3 clearfix">
+                <div class="fl">点击领{{#v.productCoupon}}元优惠券</div>
+                <div class="fr">下单链接:{{#v.productHref}}</div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- <script src="lib/mui/js/mui.js"></script> -->
+    <!-- <script src="lib/iscroll.js"></script> -->
+    <script src="js/Route.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/baicaijia.js"></script>
+</body>
+
+</html>

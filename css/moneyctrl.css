@@ -1,0 +1,96 @@
+.mmm_header {
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  background-color: #ff841d;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.mmm_header .title span {
+  height: 1.333333rem /* 100/75 */;
+  line-height: 1.333333rem /* 100/75 */;
+  padding-top: 0.373333rem /* 28/75 */;
+  padding-left: 2.866667rem /* 215/75 */;
+  color: #fff;
+  font-size: 0.48rem /* 36/75 */;
+  letter-spacing: 0.026667rem /* 2/75 */;
+  font-weight: 700;
+}
+.mmm_header .load {
+  width: 0.906667rem /* 68/75 */;
+  height: 0.906667rem /* 68/75 */;
+  padding-top: 0.24rem /* 18/75 */;
+  margin-right: 0.2rem /* 15/75 */;
+}
+.nav {
+  height: 1.04rem /* 78/75 */;
+  width: 100%;
+  background-color: #ededed;
+  text-align: center;
+  line-height: 1.04rem /* 78/75 */;
+  border-top: 2px solid #d1d1d1;
+  border-bottom: 2px solid #d1d1d1;
+}
+.nav span {
+  float: left;
+  padding-left: 0.426667rem /* 32/75 */;
+}
+.nav i {
+  float: right;
+  padding-right: 0.426667rem /* 32/75 */;
+  margin-top: 0.32rem /* 24/75 */;
+  font-size: 0.533333rem /* 40/75 */;
+}
+.product li {
+  height: 3.2rem /* 240/75 */;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+}
+.product a {
+  height: 3.133333rem /* 235/75 */;
+  width: 100%;
+}
+.product a .rec_left {
+  margin-left: 0.333333rem /* 25/75 */;
+  margin-top: 0.293333rem /* 22/75 */;
+  float: left;
+  width: 3.2rem /* 240/75 */;
+}
+.product a .rec_left img {
+  width: 2.4rem /* 180/75 */;
+  height: 2.7rem /* 160/75 */;
+}
+.product a .rec_right {
+  float: right;
+  width: 6.466667rem /* 485/75 */;
+  margin-top: 0.373333rem /* 28/75 */;
+}
+.product a .rec_right p:nth-child(1) {
+  font-size: 0.32rem /* 24/75 */;
+  color: #000000;
+  line-height: 0.533333rem /* 40/75 */;
+}
+.product a .rec_right p:nth-child(2) {
+  font-size: 0.373333rem /* 28/75 */;
+  margin-top: 0.266667rem /* 20/75 */;
+  font-weight: bold;
+  color: red;
+}
+.product a .rec_right p:nth-child(3) {
+  font-size: 0.266667rem /* 20/75 */;
+  margin-top: 0.2rem /* 15/75 */;
+  color: #ccc;
+}
+#goodsColor {
+  box-sizing: border-box;
+  background-color: white;
+}
+.selectBtn div {
+  float: left;
+  position: relative;
+  z-index: 999;
+}
+#mall-right {
+  margin-right: 10px;
+}

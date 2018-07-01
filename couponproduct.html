@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-优惠券商品</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- 标题 -->
+            <div class="title fl">
+                <span>肯德基优惠券</span>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+            <div class="tip">--点餐前出示手中的优惠券，即可享受优惠--</div>
+
+            <div class="product">
+                <ul>
+                    <!-- 挖个优惠券详情坑 -->
+                </ul>
+            </div>
+            <div class="more">
+                <div class="mm clearfix">
+                    <div class="left fl">
+                        <p>更多优惠</p>
+                        <p>&gt;&gt;</p>
+                    </div>
+                    <div class="right fr">
+                        <p>&yen;</p>
+                        <p>有效期至10月31日</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 尾部区域 -->
+        <div class="mmm_footer">
+            <div class="navbar clearfix">
+                <div class="login">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+                <div class="back">
+                    <!-- <img src="images/top.jpg" alt=""> -->
+                    <span>返回顶部</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p class="foot_b">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <li class="clearfix">
+            <div class="left fl">
+                {{#v.couponProductImg}}
+            </div>
+            <div class="right fr">
+                <p>{{v.couponProductName}}</p>
+                <p>{{v.couponProductPrice}}</p>
+                <p>{{v.couponProductTime}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/Route.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/couponproduct.js"></script>
+</body>
+
+</html>

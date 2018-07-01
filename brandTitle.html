@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-搜索页</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/brandTitle.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- logo -->
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+            <!-- 搜索区域 -->
+            <div class="search clearfix">
+                <input class="compare" type="text" placeholder="请输入你想比价的商品">
+                <button class="cli fr">
+                    <a href="bijia.html"></a>
+                    搜索</button>
+            </div>
+
+
+            <div class="nav clearfix">
+                <span>
+                    <a href="index.html">首页</a>
+                </span>
+                <span>&gt;</span>
+                <span>
+                    <a href="category.html">全部分类</a>
+                </span>
+                <i class="fa fa-angle-down"></i>
+            </div>
+
+            <div class="hot">
+                热门品牌排行
+            </div>
+
+            <ul class="model">
+                <!-- 挖个大坑 -->
+            </ul>
+        </div>
+
+
+        <!-- 尾部区域 -->
+        <div class="mmm_footer">
+            <div class="navbar clearfix">
+                <div class="login">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+                <div class="back">
+                    <!-- <img src="images/top.jpg" alt=""> -->
+                    <span>返回顶部</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p class="foot_b">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <li>
+            <div class="table">
+                <div data-id="{{v._id}}" class="nav clearfix">
+                    <a href="javascript:;">
+                        <span>{{v.title}}</span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar" style="display: none;">
+                <ul class="second clearfix">
+                    <!-- 挖个二级坑 -->
+                </ul>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <li>
+            <!-- 传参：商品分类id和商品分类名称 -->
+            <a href="productList.html?categoryid={{v.categoryId}}&category={{v.category}}">{{v.category}}</a>
+            <!-- <a href="productList.html?key={{v}}">{{v.category}}</a> -->
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/Route.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

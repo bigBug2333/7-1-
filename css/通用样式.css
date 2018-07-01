@@ -1,0 +1,24 @@
+.mmm_header {
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  background-color: #f4483e;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.mmm_header .title span {
+  height: 1.333333rem /* 100/75 */;
+  line-height: 1.333333rem /* 100/75 */;
+  padding-top: 0.373333rem /* 28/75 */;
+  padding-left: 4.2rem /* 240/75 */;
+  color: #fff;
+  font-size: 0.48rem /* 36/75 */;
+  letter-spacing: 0.026667rem /* 2/75 */;
+  font-weight: 700;
+}
+.mmm_header .load {
+  width: 0.906667rem /* 68/75 */;
+  height: 0.906667rem /* 68/75 */;
+  padding-top: 0.24rem /* 18/75 */;
+  margin-right: 0.2rem /* 15/75 */;
+}

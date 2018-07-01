@@ -1,0 +1,167 @@
+.mmm_main {
+  height: 100%;
+  width: 100%;
+}
+.mmm_main .mainnav {
+  height: 1.013333rem /* 76/75 */;
+  width: 100%;
+  line-height: 1.013333rem /* 76/75 */;
+  text-align: center;
+  background-color: #eee;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+.mmm_main .mainnav .left {
+  padding-left: 0.2rem /* 15/75 */;
+}
+.mmm_main .mainnav button {
+  width: 1.666667rem /* 125/75 */;
+  height: 0.666667rem /* 50/75 */;
+  border-radius: 0.16rem /* 12/75 */;
+  margin-top: 0.16rem /* 12/75 */;
+  margin-right: 0.2rem /* 15/75 */;
+}
+.mmm_main .product .show {
+  height: 6.72rem /* 504/75 */;
+  width: 100%;
+  position: relative;
+}
+.mmm_main .product .show p {
+  text-align: center;
+  padding: 0.533333rem /* 40/75 */;
+}
+.mmm_main .product .show img {
+  width: 4.666667rem /* 350/75 */;
+  height: 3.066667rem /* 230/75 */;
+  display: block;
+  margin: 0.4rem /* 30/75 */ auto;
+}
+.mmm_main .product .show .collect {
+  width: 1.066667rem /* 80/75 */;
+  height: 1.066667rem /* 80/75 */;
+  position: absolute;
+  right: 0.666667rem /* 50/75 */;
+  bottom: 0.533333rem /* 40/75 */;
+  background-color: lime;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.066667rem /* 80/75 */;
+}
+.mmm_main .product .color {
+  width: 100%;
+}
+.mmm_main .product .color li {
+  width: 33.33%;
+  height: 0.866667rem /* 65/75 */;
+  float: left;
+  text-align: center;
+  line-height: 0.866667rem /* 65/75 */;
+  background-color: #FFC526;
+  border: 1px solid #BF4702;
+  box-sizing: border-box;
+}
+.mmm_main .product .color li a {
+  color: #fff;
+  font-size: 0.32rem /* 24/75 */;
+}
+.mmm_main .product .color li:nth-child(1) {
+  background-color: #FF960F;
+  border-left: none;
+}
+.mmm_main .product .color li:nth-child(3) {
+  border-right: none;
+}
+.mmm_main .product .shop li {
+  height: 1.2rem /* 90/75 */;
+  line-height: 1.2rem /* 90/75 */;
+  float: left;
+}
+.mmm_main .product .shop li:nth-child(1) {
+  width: 0.413333rem /* 31/75 */;
+  height: 0.386667rem /* 29/75 */;
+  margin-left: 0.186667rem /* 14/75 */;
+}
+.mmm_main .product .shop li:nth-child(1) img {
+  padding-top: 0.4rem /* 30/75 */;
+}
+.mmm_main .product .shop li:nth-child(2) {
+  margin-left: 0.213333rem /* 16/75 */;
+}
+.mmm_main .product .shop li:nth-child(2) span {
+  font-weight: bold;
+}
+.mmm_main .product .shop li:nth-child(3) {
+  margin-left: 3.973333rem /* 298/75 */;
+}
+.mmm_main .product .shop li:nth-child(3) span {
+  color: red;
+}
+.mmm_main .product .shop li:nth-child(4) {
+  text-align: center;
+  height: 0.613333rem /* 46/75 */;
+  line-height: 0.613333rem /* 46/75 */;
+  margin-top: 0.266667rem /* 20/75 */;
+  margin-left: 0.426667rem /* 32/75 */;
+}
+.mmm_main .product .shop li:nth-child(4) a {
+  display: block;
+  width: 1.493333rem /* 112/75 */;
+  height: 0.613333rem /* 46/75 */;
+  background-color: #FF5500;
+  border: 1px solid #FF3700;
+  border-radius: 0.066667rem /* 5/75 */;
+}
+.mmm_main .desc {
+  width: 100%;
+}
+.mmm_main .desc p {
+  padding: 0.4rem /* 30/75 */;
+  padding-bottom: 0.466667rem /* 35/75 */;
+  color: #8E91A5;
+  border-top: 2px solid #bbb;
+}
+.mmm_main .eval {
+  width: 100%;
+  border-top: 3px solid #676767;
+  background-color: #DBDBDB;
+}
+.mmm_main .eval .p {
+  text-align: center;
+  height: 0.88rem /* 66/75 */;
+  line-height: 0.88rem /* 66/75 */;
+  letter-spacing: 0.04rem /* 3/75 */;
+}
+.mmm_main .eval ul {
+  background-color: #fff;
+}
+.mmm_main .eval ul li div {
+  color: #8E8E86;
+  font-size: 0.24rem /* 18/75 */;
+  padding: 0.266667rem /* 20/75 */;
+}
+.mmm_main .eval ul li div:first-of-type {
+  line-height: 0.4rem /* 30/75 */;
+  height: 0.2rem /* 15/75 */;
+}
+.mmm_main .eval ul li span:nth-of-type(1) {
+  float: left;
+}
+.mmm_main .eval ul li span:nth-of-type(2) {
+  font-size: 0.293333rem /* 22/75 */;
+  padding-right: 0.266667rem /* 20/75 */;
+  float: right;
+}
+.mmm_main .eval ul li div:last-of-type {
+  font-size: 0.293333rem /* 22/75 */;
+  float: right;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mmm_main .eval ul li div:last-of-type span:nth-of-type(2) {
+  padding-right: 0.266667rem /* 20/75 */;
+}
+.mmm_main .eval ul li p {
+  line-height: 0.56rem /* 42/75 */;
+  padding: 0.266667rem /* 20/75 */;
+  padding-top: 0;
+}

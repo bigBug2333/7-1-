@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-商品详情</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- logo -->
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+            <!-- 搜索区域 -->
+            <div class="search clearfix">
+                <input class="compare" type="text" placeholder="请输入你想比价的商品">
+                <button class="cli fr">
+                    <a href="bijia.html"></a>
+                    搜索</button>
+            </div>
+        </div>
+
+        <!-- 主体区域 -->
+        <div class="mmm_main">
+            <!-- 主体导航 -->
+            <div class="mainnav">
+                <!-- 面包屑 -->
+            </div>
+            <!-- 商品面板 -->
+            <div class="product">
+                <!-- 挖个商品坑 -->
+            </div>
+
+            <!-- 小提示 -->
+            <div class="desc">
+                <p>实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟</p>
+            </div>
+            <!-- 网友评价 -->
+            <div class="eval">
+                <p class="p">网友评价</p>
+                <ul>
+                    <!-- 挖个评价坑 -->
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 尾部区域 -->
+        <div class="mmm_footer">
+            <div class="navbar clearfix">
+                <div class="login">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+                <div class="back">
+                    <!-- <img src="images/top.jpg" alt=""> -->
+                    <span>返回顶部</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p class="foot_b">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 面包屑 -->
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <div class="left fl">
+            <span>首页</span>
+            <span> &gt; </span>
+            <span>全部分类</span>
+            <span> &gt; </span>
+            <span></span>
+        </div>
+        <button class="fr">筛选</button>
+        {{/each}}
+    </script>
+
+    <!-- 商品详情 -->
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <div class="show">
+            <a href="javascript:;">
+                <p>{{v.productName}}</p>
+                {{#v.productImg}}
+                <div class="collect">收藏</div>
+            </a>
+        </div>
+        <!-- 小导航 -->
+        <div class="color">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:;">比价购买</a>
+                </li>
+                <li>
+                    <a href="javascript:;">产品参数</a>
+                </li>
+                <li>
+                    <a href="javascript:;">评价(2333)</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 售价 -->
+        <div class="shop">
+            <ul class="clearfix">
+                <li>
+                    <img src="images/slogo.png" alt="">
+                </li>
+                <li>
+                    <span>京东商城</span>
+                </li>
+                <li>
+                    <span> &yen;1999.00 </span>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>去购买</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 评论区域 -->
+    <script type="text/html" id="tpl3">
+        {{each result v i}}
+        <li class="clearfix">
+            <div class="clearfix">
+                <span>{{v.comName}}</span>
+                <span>{{v.comTime}}</span>
+            </div>
+            <div>
+                <span>{{v.comFrom}}</span>
+            </div>
+            <br>
+            <p>{{v.comContent}}</p>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/Route.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/bijia.js"></script>
+</body>
+
+</html>

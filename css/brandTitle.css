@@ -1,0 +1,69 @@
+.nav {
+  height: 1.04rem /* 78/75 */;
+  width: 100%;
+  background-color: #ededed;
+  text-align: center;
+  line-height: 1.04rem /* 78/75 */;
+  border-top: 2px solid #d1d1d1;
+  border-bottom: 2px solid #d1d1d1;
+}
+.nav span {
+  float: left;
+  padding-left: 0.426667rem /* 32/75 */;
+}
+.nav i {
+  float: right;
+  padding-right: 0.426667rem /* 32/75 */;
+  margin-top: 0.32rem /* 24/75 */;
+  font-size: 0.533333rem /* 40/75 */;
+}
+.hot {
+  width: 9.653333rem /* 724/75 */;
+  height: 1.04rem /* 78/75 */;
+  line-height: 1.04rem /* 78/75 */;
+  text-align: center;
+  color: #864206;
+  font-size: 0.426667rem /* 32/75 */;
+  letter-spacing: 0.053333rem /* 4/75 */;
+  background-color: #EEEEEE;
+  border: 1px solid #CECECE;
+  margin: 0.32rem /* 24/75 */ 0.16rem /* 12/75 */;
+}
+.table .nav {
+  height: 1.04rem /* 78/75 */;
+  width: 100%;
+  background-color: #EDEDED;
+  text-align: center;
+  line-height: 1.04rem /* 78/75 */;
+  border-top: 2px solid #D1D1D1;
+  border-bottom: 2px solid #D1D1D1;
+}
+.table .nav span {
+  float: left;
+  padding-left: 0.426667rem /* 32/75 */;
+}
+.table .nav i {
+  float: right;
+  padding-right: 0.426667rem /* 32/75 */;
+  margin-top: 0.32rem /* 24/75 */;
+  font-size: 0.533333rem /* 40/75 */;
+}
+.navbar li {
+  float: left;
+  width: 33.33%;
+  height: 1.013333rem /* 76/75 */;
+  line-height: 1.013333rem /* 76/75 */;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.373333rem /* 28/75 */;
+  letter-spacing: 0.053333rem /* 4/75 */;
+  background-color: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-collapse: collapse;
+}
+.navbar li:nth-child(3n) {
+  border-right: none;
+}
+.navbar li:nth-child(3n+1) {
+  border-left: none;
+}

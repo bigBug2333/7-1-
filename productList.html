@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-搜索页</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productList.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- logo -->
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+            <!-- 搜索区域 -->
+            <div class="search clearfix">
+                <input class="compare" type="text" placeholder="请输入你想比价的商品">
+                <button class="cli fr">
+                    <a href="bijia.html"></a>
+                    搜索</button>
+            </div>
+
+            <div class="table">
+                <!-- 挖个三级坑 -->
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <div class="rec_left">
+                            {{#v.productImg}}
+                        </div>
+                        <div class="rec_right">
+                            <p>
+                                <span>{{v.productName}}</span>
+                            </p>
+                            <div class="clearfix">
+                                <p class="fl">{{v.productPrice}}</p>
+                                <span class="fr">{{v.productQuote}} {{v.productCom }}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+
+        <!-- 尾部区域 -->
+        <div class="mmm_footer">
+            <div class="navbar clearfix">
+                <div class="login">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+                <div class="back">
+                    <!-- <img src="images/top.jpg" alt=""> -->
+                    <span>返回顶部</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p class="foot_b">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!-- 面包屑 -->
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <div class="nav clearfix">
+            <span><a href="index.html">首页</a></span>
+            <span>&gt;</span>
+            <span><a href="category.html">全部分类</a>
+                </span>
+            <span>&gt;</span>
+            <span><a href="bijia.html?category={{v.category}}"></a>{{v.category}}</span>
+            <i class="fa fa-angle-down"></i>
+        </div>
+        <div class="product">
+            <ul>
+                <!-- 商品详情坑 -->
+            </ul>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 商品列表 -->
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <li>
+            <a href="bijia.html?productId={{v.productId}}" class="clearfix">
+                <div class="rec_left">
+                    {{#v.productImg}}
+                </div>
+                <div class="rec_right">
+                    <p>{{v.productName}}</p>
+                    <p>{{v.productPrice}}</p>
+                    <p>{{v.productQuote}} {{v.productCom}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 分页功能 -->
+    <script type="tetx/html" id="tpl3">
+    
+    </script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/Route.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/productList.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

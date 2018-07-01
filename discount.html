@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-国内折扣</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/discount.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- 标题 -->
+            <div class="title fl">
+                <span>国内折扣</span>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+                <!-- 描述部分 -->
+                <div class="desc">
+                    <!-- 挖个商品坑 -->
+                </div>
+    
+                <!-- <div class="land">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>北京
+                                    <strong>有货</strong>
+                                </span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div> -->
+    
+                <!-- 前往购买 -->
+                <div class="go">
+                    <a href="javascript:;">前往购买</a>
+                </div>
+    
+                <!-- 发布部分 -->
+                <div class="box">
+                    <img src="images/mmbweixin2.png" alt="">
+                </div>
+    
+                <!-- 评论部分 -->
+                <div class="comment">
+                    <div class="pull">
+                        <p>发表评论</p>
+                        <textarea name="comment" id="comment" cols="30" rows="10">
+                        </textarea>
+                        <div class="btn">发表评论</div>
+                    </div>
+                    <div class="push">
+                        <!-- 挖个评价坑 -->
+                        <!-- <div class="cu-content-pl ui-border-t">
+                            <div class="tit">发表评论</div>
+                            <div class="reply">
+                                <div class="form">
+                                    <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+                                    <input name="ctl00$ContentBody$lbl_fbr" id="ctl00_ContentBody_lbl_fbr" value="手机端网友14***154" type="hidden">
+                                    <input name="ctl00$ContentBody$hid_name" id="ctl00_ContentBody_hid_name" value="预售：Sounder 声德 N6 核桃蓝牙音箱" type="hidden">
+                                    <div class="ctrl">
+                                        <input name="ctl00$ContentBody$Button1" value="发表评论" id="ctl00_ContentBody_Button1" class="tjdp" type="submit">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tit" id="newcomment">最新评论</div>
+                            <div class="list">
+                                <ul>
+                                    <li class="ui-border-b">
+                                        <div class="userimg">
+                                            <img src="http://bbs.manmanbuy.com/images/face/none.gif">
+                                        </div>
+                                        <div class="con">
+                                            <div class="name clearfix">
+                                                <div class="username">sxy66</div>
+                                                <div class="time">2016/10/25 13:24:09</div>
+                                            </div>
+                                            <div class="content">不错</div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-border-b">
+                                        <div class="userimg">
+                                            <img src="http://home.manmanbuy.com/upface/face/1459327543_162.jpg">
+                                        </div>
+                                        <div class="con">
+                                            <div class="name clearfix">
+                                                <div class="username">好奇的瞳孔</div>
+                                                <div class="time">2016/10/25 12:58:46</div>
+                                            </div>
+                                            <div class="content">这外形好优雅 第一眼还真没看出来</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!-- 哈哈哈 -->
+                        <p>最新评论</p>
+                        <div class="show">
+                            <div class="head">
+                                <img src="images/3.gif" alt="">
+                            </div>
+                            <div class="nickname">
+                                <span>明天会更好</span>
+                                <span>2018:07:12</span>
+                            </div>
+                            <br>
+                            <div class="review">比别的超市便宜了几块</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- 尾部区域 -->
+            <div class="mmm_footer">
+                <div class="navbar clearfix">
+                    <div class="login">
+                        <a href="login.html">登录</a>
+                    </div>
+                    <div class="register">
+                        <a href="register.html">注册</a>
+                    </div>
+                    <div class="back">
+                        <!-- <img src="images/top.jpg" alt=""> -->
+                        <span>返回顶部</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="foot">
+                <p class="foot_b">
+                    <span>手机APP下载</span>
+                    <span>慢慢买手机版</span>
+                    <span> -- 掌上比价平台</span>
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+        <!-- 商品坑 -->
+        <script type="text/html" id="tpl1">
+            {{each result v i}}
+            <p class="p">{{v.productName}}</p>
+            <p style="margin-left:.333333rem /* 25/75 */;color:red;">{{v.productTime}}</p>
+            <div class="info">
+                <span>{{v.productPinkage}}</span>
+                <span>{{v.productFrom}}</span>
+                <span>{{v.productTime}}</span>
+                <span>{{v.productTips}}</span>
+            </div>
+    
+            <div class="inner"> 
+                <p class="pp">
+                    {{#v.productImg}}
+                    {{v.productInfo1}}
+                </p>
+                <br>
+                <p>{{v.productInfo}}</p>
+                <div class="big">
+                    {{#v.productImg}}
+                </div>
+            </div> 
+            <!-- <div class="land">
+                {{#v.productCity}}
+            </div> -->
+            {{/each}}
+        </script>
+    
+    
+        <!-- 评价坑 -->
+        <script type="text/html" id="tpl2">
+            {{each result v i}}
+            <!-- <p>最新评论</p>
+            <div class="show">
+                <div class="head">
+                    <img src="images/3.gif" alt="">
+                </div>
+                <div class="nickname">
+                    <span>赶鸭子上架</span>
+                    <span>2018:07:12</span>
+                </div>
+                <br>
+                <div class="review">比别的超市便宜了几块</div>
+            </div> -->
+    
+    
+            <!-- {{#v.productComment}} -->
+            
+            {{/each}}
+        </script>
+    
+    
+        <script src="lib/zepto/zepto.min.js"></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/artTemplate/template-web.js"></script>
+        <script src="js/Route.js"></script>
+        <script src="js/Tools.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/discount.js"></script>
+    </body>
+    
+    </html>

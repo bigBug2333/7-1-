@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-凑单品</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<script src="lib/flexible/flexible.js"></script>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <!-- 标题 -->
+            <div class="title fl">
+                <span>凑单品</span>
+            </div>
+            <!-- 下载 -->
+            <div class="load fr">
+                <a href="index.html">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="mmm_content">
+            <div class="nav">
+                <ul class="clearfix">
+                    <li>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style = "height:.6rem /* 45/75 */;width:1.333333rem /* 100/75 */;font-size: .32rem /* 24/75 */;">
+                                京东
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <!-- 一级框 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style = "height:.6rem /* 45/75 */;width:1.333333rem /* 100/75 */;font-size: .32rem /* 24/75 */;">
+                                华北
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="second">
+                                    <!-- 二级框 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                            style = "height:.6rem /* 45/75 */;width:1.733333rem /* 130/75 */;font-size: .32rem /* 24/75 */;">
+                                全部价格
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="first">
+                                    <!-- 一级框 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ic">
+                        <i class="fa fa-align-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul class="clearfix">
+                    <!-- 挖个商品坑 -->
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- 尾部区域 -->
+        <div class="mmm_footer">
+            <div class="navbar clearfix">
+                <div class="login">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">注册</a>
+                </div>
+                <div class="back">
+                    <!-- <img src="images/top.jpg" alt=""> -->
+                    <span>返回顶部</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p class="foot_b">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+    <!-- 导航一级框 -->
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <!-- 京东 -->      
+        <a href="#" data-shopid={{v.shopId}}> {{v.shopName}}</a>
+        {{/each}}
+    </script>
+    <!-- 导航二级框 -->
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <!-- 华北 -->
+        <a href="#" data-areaid={{v.areaId}}> {{v.areaName}}</a>
+        {{/each}}
+    </script>
+
+    <!-- 挖个商品坑 -->
+    <script type="text/html" id="tpl3">
+        {{each result v i}}
+        <li>
+            <a href="javascript:;">
+                <img src="{{#v.productImg}}" alt="">
+                <p>{{v.productName}}</p>
+                <div class="clearfix">
+                    <span class="fl">{{v.productPrice}}</span>
+                    <span class="fl">去凑单</span>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/Route.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/gsproduct.js"></script>
+</body>
+
+</html>
